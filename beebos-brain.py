@@ -367,7 +367,5 @@ async def lookup_stuff(ctx: SlashContext):
 ########## BOT START ##########
 
 print('starting bot...')
-bot = interactions.Client(token="NDg4MDk3ODAyMTc0NTk1MDcy.GsprwB.MehNgNgn_ungc3fZHGarBD10-cuHTSI1cwXjRs",
-                          intents=interactions.Intents.MESSAGES)
 
 bot.start()
