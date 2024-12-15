@@ -44,6 +44,37 @@ async def my_command_function(ctx: SlashContext):
                 with open("movie-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
 
+@slash_command(name="add-christmas-movie", description="Add a Christmas movie to Beebo's brain matrix")
+async def my_command_function(ctx: SlashContext):
+    my_modal = Modal(
+        ShortText(
+            label="Christmas",
+            custom_id="christmas_text",
+            required=True,
+            placeholder="Christmas movie name here",
+            max_length=50,
+        ),
+        title="Christmas Movie Suggestion",
+    )
+    await ctx.send_modal(modal=my_modal)
+    modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
+    movie_text = modal_ctx.responses["christmas_text"]
+    await modal_ctx.send(f"Christmas movie added by {modal_ctx.author.display_name}: {christmas_text}", ephemeral=False, silent=True)
+    with open("christmas-list.txt", "r") as f1:
+        x = str(random.randint(100, 999))
+        christmas_list = f1.readlines()
+        for i in christmas_list:
+            if x in i:
+                x = str(random.randint(100, 999))
+        with open("christmas-list.txt", "a") as f:
+            f.write(f"{x}  -  {christmas_text}: added by {modal_ctx.author.username}\n")
+        with open("movie-users.txt", "r") as f2:
+            if str(modal_ctx.author.username) in f2.read():
+                print("user already in list")
+            else:
+                with open("movie-users.txt", "a") as f3:
+                    f3.write(f"{modal_ctx.author.username}\n")
+
 @slash_command(name="list-movie", description="List all movies in Beebo's brain")
 async def movie_list(ctx: SlashContext):
     with open("movie-list5.txt", "r") as f:
@@ -367,6 +398,5 @@ async def lookup_stuff(ctx: SlashContext):
 ########## BOT START ##########
 
 print('starting bot...')
-test
 
 bot.start()
