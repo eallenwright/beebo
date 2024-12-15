@@ -1,5 +1,6 @@
 from interactions import listen, slash_command, SlashContext, Button, ButtonStyle, Modal, ModalContext, ShortText, ActionRow
 from interactions.api.events import Component, ModalCompletion
+from private.config import token
 import interactions
 import asyncio
 import os
@@ -398,5 +399,6 @@ async def lookup_stuff(ctx: SlashContext):
 ########## BOT START ##########
 
 print('starting bot...')
-
+bot = interactions.Client(token=token,
+                          intents=interactions.Intents.MESSAGES)
 bot.start()
