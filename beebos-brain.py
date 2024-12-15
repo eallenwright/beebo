@@ -59,7 +59,7 @@ async def my_command_function(ctx: SlashContext):
     )
     await ctx.send_modal(modal=my_modal)
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
-    movie_text = modal_ctx.responses["christmas_text"]
+    christmas_text = modal_ctx.responses["christmas_text"]
     await modal_ctx.send(f"Christmas movie added by {modal_ctx.author.display_name}: {christmas_text}", ephemeral=False, silent=True)
     with open("christmas-list.txt", "r") as f1:
         x = str(random.randint(100, 999))
@@ -107,6 +107,14 @@ async def movie_roll(ctx: SlashContext):
             else:
                 await ctx.send(f"Beebo chose {randomuser}, but they haven't added enough movies (three) to be considered by His grace. Beebo will roll again")
                 x = True
+
+@slash_command(name="beebo-my-christmas", description="Extract a Christmas movie from Beebo's brain")
+async def movie_roll(ctx: SlashContext):
+    with open("christmas-list.txt", "r") as f1:
+            movie_list = f1.readlines()
+            randommovie = movie_list[random.randint(0, len(movie_list)-1)]
+            justthemovie = randommovie.split(':')[0]
+            await ctx.send(f"From deep within the folds of The Pit, a Selection is born:\n {randommovie}")
 
 @slash_command(name="del-movie", description="Partially lobotomize Beebo")
 async def delete_movie(ctx: SlashContext):
