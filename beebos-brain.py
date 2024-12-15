@@ -367,6 +367,6 @@ async def lookup_stuff(ctx: SlashContext):
 ########## BOT START ##########
 
 print('starting bot...')
-
+test
 
 bot.start()
