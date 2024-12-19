@@ -39,7 +39,6 @@
 593  -  Cherry 2000: added by drmonocle
 703  -  Troll 2: added by .tellurium
 702  -  Speed 2: Cruise Control: added by drmonocle
-102  -  Hot Fuzz: added by mitchum411
 388  -  Venture Bros Movie: added by drmonocle
 205  -  The Founder: added by .tellurium
 496  -  Breath Hill 60: added by .tellurium
@@ -193,3 +192,11 @@
 543  -  Miss March: added by drmonocle
 613  -  The Marine: added by drmonocle
 923  -  28 Days Later: added by .tellurium
+649  -  XMAS MOVIE -  Die Hard: added by steeeps
+881  -  XMAS MOVIE -  Hook: added by drmonocle
+104  -  XMAS MOVIE -  jingle all the way: added by chlor8
+315  -  XMAS MOVIE -  Home Alone 2: added by drmonocle
+632  -  XMAS MOVIE -  Home Alone 1: added by mitchum411
+984  -  XMAS MOVIE -  DIE HARD: added by dingleberrytagnut
+679  -  XMAS MOVIE -  National Lampoon's Christmas Vacation: added by mitchum411
+253  -  XMAS MOVIE -  A Charlie Brown Christmas: added by .tellurium

@@ -61,19 +61,19 @@ async def my_command_function(ctx: SlashContext):
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
     christmas_text = modal_ctx.responses["christmas_text"]
     await modal_ctx.send(f"Christmas movie added by {modal_ctx.author.display_name}: {christmas_text}", ephemeral=False, silent=True)
-    with open("christmas-list.txt", "r") as f1:
+    with open("movie-list5.txt", "r") as f1:
         x = str(random.randint(100, 999))
         christmas_list = f1.readlines()
         for i in christmas_list:
             if x in i:
                 x = str(random.randint(100, 999))
-        with open("christmas-list.txt", "a") as f:
-            f.write(f"{x}  -  {christmas_text}: added by {modal_ctx.author.username}\n")
-        with open("movie-users.txt", "r") as f2:
+        with open("movie-list5.txt", "a") as f:
+            f.write(f"{x}  -  XMAS MOVIE -  {christmas_text}: added by {modal_ctx.author.username}\n")
+        with open("christmas-users.txt", "r") as f2:
             if str(modal_ctx.author.username) in f2.read():
                 print("user already in list")
             else:
-                with open("movie-users.txt", "a") as f3:
+                with open("christmas-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
 
 @slash_command(name="list-movie", description="List all movies in Beebo's brain")
@@ -110,11 +110,19 @@ async def movie_roll(ctx: SlashContext):
 
 @slash_command(name="beebo-my-christmas", description="Extract a Christmas movie from Beebo's brain")
 async def movie_roll(ctx: SlashContext):
-    with open("christmas-list.txt", "r") as f1:
-            movie_list = f1.readlines()
-            randommovie = movie_list[random.randint(0, len(movie_list)-1)]
+    with open("christmas-users.txt", "r") as f1:
+            user_list = f1.readlines()
+            randomuser = random.choice(user_list)
+            print(randomuser)
+    with open("movie-list5.txt", "r") as f:
+            movie_list = f.readlines()
+            randomuserslist = []
+            for i in movie_list:
+                if randomuser in i and "XMAS MOVIE" in i:
+                    randomuserslist.append(i)
+            randommovie = randomuserslist[random.randint(0, len(randomuserslist)-1)]
             justthemovie = randommovie.split(':')[0]
-            await ctx.send(f"From deep within the folds of The Pit, a Selection is born:\n {randommovie}")
+            await ctx.send(f"From deep within the folds of The Pit, a Christmas Miracle by {randomuser} is born:\n {justthemovie}")
 
 @slash_command(name="del-movie", description="Partially lobotomize Beebo")
 async def delete_movie(ctx: SlashContext):
