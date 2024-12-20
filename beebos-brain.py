@@ -46,7 +46,7 @@ async def my_command_function(ctx: SlashContext):
                     f3.write(f"{modal_ctx.author.username}\n")
 
 @slash_command(name="add-christmas-movie", description="Add a Christmas movie to Beebo's brain matrix")
-async def my_command_function(ctx: SlashContext):
+async def my_command_function2(ctx: SlashContext):
     my_modal = Modal(
         ShortText(
             label="Christmas",
@@ -109,7 +109,7 @@ async def movie_roll(ctx: SlashContext):
                 x = True
 
 @slash_command(name="beebo-my-christmas", description="Extract a Christmas movie from Beebo's brain")
-async def movie_roll(ctx: SlashContext):
+async def movie_roll2(ctx: SlashContext):
     with open("christmas-users.txt", "r") as f1:
             user_list = f1.readlines()
             randomuser = random.choice(user_list)
@@ -158,7 +158,7 @@ async def delete_movie(ctx: SlashContext):
             f.close()
 
 @slash_command(name="archive-movie", description="Archive a watched movie")
-async def delete_movie(ctx: SlashContext):
+async def delete_movie2(ctx: SlashContext):
     my_modal = Modal(
         ShortText(
             label="Archive Movie",
