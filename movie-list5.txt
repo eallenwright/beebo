@@ -56,7 +56,6 @@
 671  -  The Big Lebowski: added by mitchum411
 259  -  Point Break: added by drmonocle
 757  -  The Asian Connection: added by .tellurium
-204  -  OG theatrical cut of Empire Strikes Back: added by drmonocle
 746  -  The Machinist: added by mitchum411
 714  -  Vice: added by .tellurium
 795  -  Dunkirk: added by .tellurium
@@ -103,7 +102,6 @@
 309  -  The Great Escape: added by dingleberrytagnut
 690  -  The Defiant Ones: added by dingleberrytagnut
 731  -  The Public Enemy: added by dingleberrytagnut
-609  -  Leon: the Professional: added by ziggsmanofmayo
 619  -  Willy Wonka & the Chocolate Factory: added by dingleberrytagnut
 580  -  Happy Gilmore: added by steeeps
 658  -  Logan: added by steeeps
@@ -192,14 +190,50 @@
 543  -  Miss March: added by drmonocle
 613  -  The Marine: added by drmonocle
 923  -  28 Days Later: added by .tellurium
-649  -  XMAS MOVIE -  Die Hard: added by steeeps
 881  -  XMAS MOVIE -  Hook: added by drmonocle
 104  -  XMAS MOVIE -  jingle all the way: added by chlor8
 315  -  XMAS MOVIE -  Home Alone 2: added by drmonocle
-632  -  XMAS MOVIE -  Home Alone 1: added by mitchum411
-984  -  XMAS MOVIE -  DIE HARD: added by dingleberrytagnut
 679  -  XMAS MOVIE -  National Lampoon's Christmas Vacation: added by mitchum411
 253  -  XMAS MOVIE -  A Charlie Brown Christmas: added by .tellurium
 424  -  XMAS MOVIE -  Scrooged: added by drmonocle
 360  -  XMAS MOVIE -  Tyler Perry's A Madea Christmas: added by drmonocle
 606  -  XMAS MOVIE -  The Santa Claus: added by drmonocle
+658  -  Freaky Friday: added by drmonocle
+392  -  The Abyss: added by .tellurium
+920  -  XMAS MOVIE -  Die Hard but the audio replaced with The Wolverine: added by drmonocle
+372  -  Blues Brothers: added by .tellurium
+241  -  Moonwalker: added by drmonocle
+146  -  Iron Man: added by steeeps
+724  -  Charlie Wilson's War: added by .tellurium
+649  -  Interstella 5555: added by .tellurium
+568  -  Scott pilgrim vs the world: added by steeeps
+114  -  Solo: A Star Wars Story: added by steeeps
+281  -  Megalopolis: added by drmonocle
+987  -  XMAS MOVIE -  Fatman: added by steeeps
+815  -  OG Theatrical Cut of Return of the Jedi: added by steeeps
+972  -  Tucker & Dale vs. Evil: added by mitchum411
+343  -  Scooby-Doo! and Kiss: Rock and Roll Mystery: added by chlor8
+356  -  Scooby-Doo on Zombie Island: added by drmonocle
+182  -  Copland: added by steeeps
+295  -  Troll 2: added by .tellurium
+600  -  Ravenous: added by .tellurium
+837  -  3:10 to Yuma: added by .tellurium
+437  -  Sunshine: added by .tellurium
+907  -  The Village: added by .tellurium
+867  -  Signs: added by .tellurium
+851  -  The Happening: added by .tellurium
+305  -  Wet Hot American Summer: added by .tellurium
+634  -  Dodgeball: A True Underdog Story: added by golden_god
+943  -  Behind Enemy Lines: added by drmonocle
+766  -  28 Days Later: added by golden_god
+856  -  Forest Gump: added by gbaden11
+744  -  Mask: added by gbaden11
+536  -  Moonrise Kingdom: added by steeeps
+495  -  The Road: added by .tellurium
+912  -  Last Action Hero: added by steeeps
+174  -  Teenage Mutant Ninja Turtles: added by gbaden11
+503  -  angels in the outfield: added by gbaden11
+435  -  Fight Club: added by .tellurium
+336  -  To Live and Die in L.A.: added by mitchum411
+818  -  The Northman: added by mitchum411
+210  -  John Dies in the End: added by gbaden11

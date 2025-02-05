@@ -190,6 +190,105 @@ async def delete_movie2(ctx: SlashContext):
                 await modal_ctx.send(f"Movie archived by {modal_ctx.author.display_name}: {moviestring}", ephemeral=False, silent=True)
             f.close()
 
+
+########## SHOWS ##########
+
+@slash_command(name="add-show", description="Add a show to Beebo's brain matrix")
+async def my_command_function3(ctx: SlashContext):
+    my_modal = Modal(
+        ShortText(
+            label="Show",
+            custom_id="show_text",
+            required=True,
+            placeholder="Show name here",
+            max_length=50,
+        ),
+        title="Show Suggestion",
+    )
+    await ctx.send_modal(modal=my_modal)
+    modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
+    show_text = modal_ctx.responses["show_text"]
+    await modal_ctx.send(f"Show added by {modal_ctx.author.display_name}: {show_text}", ephemeral=False, silent=True)
+    with open("show-list.txt", "r") as f1:
+        x = str(random.randint(100, 999))
+        show_list = f1.readlines()
+        for i in show_list:
+            if x in i:
+                x = str(random.randint(100, 999))
+        with open("show-list.txt", "a") as f:
+            f.write(f"{x}  -  {show_text}: added by {modal_ctx.author.username}\n")
+        with open("show-users.txt", "r") as f2:
+            if str(modal_ctx.author.username) in f2.read():
+                print("user already in list")
+            else:
+                with open("show-users.txt", "a") as f3:
+                    f3.write(f"{modal_ctx.author.username}\n")
+
+@slash_command(name="list-shows", description="List all shows in Beebo's brain")
+async def show_list(ctx: SlashContext):
+    with open("show-list.txt", "r") as f:
+        show_list = f.readlines()
+        finallist = "".join(show_list)
+        paginator = Paginator.create_from_string (bot, finallist, page_size=2000)
+        await paginator.send(ctx, ephemeral=True, silent=True)
+
+@slash_command(name="del-show", description="Partially lobotomize Beebo")
+async def delete_show(ctx: SlashContext):
+    my_modal = Modal(
+        ShortText(
+            label="Delete Show",
+            custom_id="show_remove",
+            required=True,
+            placeholder="The # of the show to delete. Use /list-show to get #.",
+            max_length=3,
+        ),
+        title="Show # to Delete",
+    )
+    await ctx.send_modal(modal=my_modal)
+    modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
+    show_remove = modal_ctx.responses["show_remove"]
+    with open("show-list.txt", "r") as f:
+        lines= f.readlines()
+        f.close()
+        theshowinquestion = "x"
+        for line in lines:
+            if show_remove in line:
+                theshowinquestion = line
+                showstring=theshowinquestion[0:theshowinquestion.find(':')]
+                if modal_ctx.author.username in theshowinquestion:
+                    with open(r"show-list.txt", "w") as f:
+                        for line in lines:
+                         if line != theshowinquestion:
+                             f.write(line)
+                    await modal_ctx.send(f"Show deleted by {modal_ctx.author.display_name}: {showstring}", ephemeral=False, silent=True)
+                else:
+                    await modal_ctx.send(f"{modal_ctx.author.display_name} tried to remove {showstring}, which does not belong to them. Shame them!", ephemeral=False, silent=True)
+            f.close()
+
+@slash_command(name="roll-show", description="Extract a show from Beebo's brain")
+async def show_roll(ctx: SlashContext):
+    x = 1
+    while x:
+        x = False
+        randomuser = "x"
+        with open("show-users.txt", "r") as f1:
+            user_list = f1.readlines()
+            randomuser = random.choice(user_list)
+            print(randomuser)
+        with open("show-list.txt", "r") as f:
+            show_list = f.readlines()
+            randomuserslist = []
+            for i in show_list:
+                if randomuser in i:
+                    randomuserslist.append(i)
+            if len(randomuserslist) >= 2:
+                randomshow = randomuserslist[random.randint(0, len(randomuserslist)-1)]
+                justtheshow = randomshow.split(':')[0]
+                await ctx.send(f"From deep within the folds of The Pit, a Selection by {randomuser} is born:\n {justtheshow}")
+            else:
+                await ctx.send(f"Beebo chose {randomuser}, but they haven't added enough movies (three) to be considered by His grace. Beebo will roll again")
+                x = True
+
 ########## GAMES ##########
 
 
@@ -392,15 +491,21 @@ async def lookup_stuff(ctx: SlashContext):
     with open("movie-list5.txt", "r") as d:
         movieslines = d.readlines()
         d.close()
+    with open("show-list.txt", "r") as c:
+        showlines= c.readlines()
+        c.close()
     biglist = []
     for line in gameslines:
         if find_this.lower() in line.lower():
-            biglist.append(line)
+            biglist.append("GAME - " + line)
             #await modal_ctx.send(f"Game: {line}", ephemeral=False, silent=True)
     for line in movieslines:
         if find_this.lower() in line.lower():
-            biglist.append(line)
+            biglist.append("MOVIE - " + line)
             #await modal_ctx.send(f"Movie: {line}", ephemeral=False, silent=True)
+    for line in showlines:
+        if find_this.lower() in line.lower():
+            biglist.append("TV SHOW - " + line)
     finallist = "".join(biglist)
     paginator = Paginator.create_from_string (bot, finallist, page_size=4000)
     if not biglist:
@@ -409,8 +514,36 @@ async def lookup_stuff(ctx: SlashContext):
         await modal_ctx.send(f"Recods containing: {find_this}", ephemeral=True, silent=True)
         await paginator.send(ctx, ephemeral=True, silent=True)
 
+@slash_command(name="consent-to-beebo", description="Forego your free will")
+async def consent(ctx: SlashContext):
+    my_modal = Modal(
+        ShortText(
+            label="Consent",
+            custom_id="consent_text",
+            required=True,
+            placeholder="I give my consent",
+            max_length=50,
+        ),
+        title="Any last words as man with agency?",
+    )
+    await ctx.send_modal(modal=my_modal)
+    modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
+    consent_text = modal_ctx.responses["consent_text"]
+    await modal_ctx.send(f"Consent given by {modal_ctx.author.display_name} with the following message: {consent_text}", ephemeral=False, silent=True)
+    with open("consent-users.txt", "r") as f2:
+        if str(modal_ctx.author.username) in f2.read():
+            print("user already in list")
+        else:
+            with open("consent-users.txt", "a") as f3:
+                f3.write(f"{modal_ctx.author.username}\n")
 
-    
+@slash_command(name="choose-victim", description="Choose a participant for the dark games")
+async def victim_roll(ctx: SlashContext):
+    randomuser = "x"
+    with open("consent-users.txt", "r") as f1:
+        user_list = f1.readlines()
+        randomuser = random.choice(user_list)
+        await ctx.send(f"Beebo chooses {randomuser}") 
 
 ########## BOT START ##########
 
