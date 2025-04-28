@@ -13,7 +13,6 @@
 770  -  Conan the Barbarian: added by drmonocle
 160  -  Total Recall: added by drmonocle
 886  -  The Cat in the Hat: added by drmonocle
-499  -  Kiss Kiss Bang Bang: added by drmonocle
 312  -  Harry Potter & the G of F: added by drmonocle
 855  -  Underworld: added by steeeps
 139  -  Coherence: added by steeeps
@@ -25,11 +24,9 @@
 548  -  Braveheart: added by dingleberrytagnut
 810  -  Captain Ron: added by drmonocle
 670  -  A Knight's Tale: added by drmonocle
-152  -  Road House: added by dingleberrytagnut
 872  -  Drive: added by drmonocle
 455  -  Willow: added by steeeps
 371  -  Delgo: added by drmonocle
-478  -  Waiting for Godot: added by dingleberrytagnut
 436  -  The Truman Show: added by mitchum411 
 669  -  The Searchers: added by drmonocle
 745  -  The Way of the Dragon: added by drmonocle
@@ -87,7 +84,6 @@
 884  -  The Martian: added by .tellurium
 611  -  American Fiction: added by .tellurium
 414  -  Predator: added by steeeps
-910  -  The Matrix: added by steeeps
 765  -  Westworld: added by steeeps
 433  -  X-Men Days of Future Past: added by steeeps
 890  -  Hulk Vs Wolverine: added by steeeps
@@ -105,7 +101,6 @@
 619  -  Willy Wonka & the Chocolate Factory: added by dingleberrytagnut
 580  -  Happy Gilmore: added by steeeps
 658  -  Logan: added by steeeps
-270  -  War Games: added by dingleberrytagnut
 305  -  Pirates of Silicon Valley: added by dingleberrytagnut
 805  -  Citizen Kane: added by dingleberrytagnut
 689  -  The Godfather: added by dingleberrytagnut
@@ -123,16 +118,12 @@
 630  -  The Gray Man: added by drmonocle
 358  -  Unfrosted: added by drmonocle
 740  -  Beverly Hills Cop: Axel F: added by drmonocle
-234  -  The Matrix: added by dingleberrytagnut
 542  -  ed edd and eddy: added by gbaden11
 820  -  Whiplash: added by mitchum411
-712  -  28 Days Later: added by dingleberrytagnut
 162  -  1917: added by mitchum411
 540  -  Unthinkable: added by mitchum411
-480  -  asteroid city: added by ziggsmanofmayo
 567  -  Willy's Wonderland: added by mitchum411
 131  -  the pursuit of hapiness: added by ziggsmanofmayo
-781  -  John Q.: added by drmonocle
 969  -  Stepford Wives: added by steeeps
 655  -  Hook: added by drmonocle
 141  -  Heat: added by dingleberrytagnut
@@ -149,7 +140,6 @@
 782  -  Teeth: added by steeeps
 779  -  Django Unchained: added by mitchum411
 624  -  Toy Story: added by drmonocle
-597  -  Slow West: added by mitchum411
 885  -  The Bikeriders: added by mitchum411
 527  -  Dredd: added by mitchum411
 706  -  Troy: added by steeeps
@@ -159,7 +149,6 @@
 705  -  The Public Enemy: added by drmonocle
 368  -  Death Bed: The Bed that Eats People: added by steeeps
 771  -  Flight: added by drmonocle
-786  -  John Q: added by drmonocle
 896  -  Blazing Saddles: added by steeeps
 429  -  The Informant: added by steeeps
 257  -  Iron eagle: added by drmonocle
@@ -189,7 +178,6 @@
 940  -  Zoolander: added by steeeps
 543  -  Miss March: added by drmonocle
 613  -  The Marine: added by drmonocle
-923  -  28 Days Later: added by .tellurium
 881  -  XMAS MOVIE -  Hook: added by drmonocle
 104  -  XMAS MOVIE -  jingle all the way: added by chlor8
 315  -  XMAS MOVIE -  Home Alone 2: added by drmonocle
@@ -206,7 +194,6 @@
 146  -  Iron Man: added by steeeps
 724  -  Charlie Wilson's War: added by .tellurium
 649  -  Interstella 5555: added by .tellurium
-568  -  Scott pilgrim vs the world: added by steeeps
 114  -  Solo: A Star Wars Story: added by steeeps
 281  -  Megalopolis: added by drmonocle
 987  -  XMAS MOVIE -  Fatman: added by steeeps
@@ -225,15 +212,42 @@
 305  -  Wet Hot American Summer: added by .tellurium
 634  -  Dodgeball: A True Underdog Story: added by golden_god
 943  -  Behind Enemy Lines: added by drmonocle
-766  -  28 Days Later: added by golden_god
 856  -  Forest Gump: added by gbaden11
 744  -  Mask: added by gbaden11
-536  -  Moonrise Kingdom: added by steeeps
 495  -  The Road: added by .tellurium
 912  -  Last Action Hero: added by steeeps
-174  -  Teenage Mutant Ninja Turtles: added by gbaden11
 503  -  angels in the outfield: added by gbaden11
-435  -  Fight Club: added by .tellurium
 336  -  To Live and Die in L.A.: added by mitchum411
 818  -  The Northman: added by mitchum411
 210  -  John Dies in the End: added by gbaden11
+852  -  There Will Be Blood: added by mitchum411
+435  -  Hot Rod: added by .tellurium
+377  -  Predators: added by steeeps
+978  -  Howl's Moving Castle: added by steeeps
+875  -  nausicaa: added by gbaden11
+300  -  Princess Mononoke: added by gbaden11
+267  -  Prey: added by .tellurium
+612  -  XMAS MOVIE -  Kim Kardashian Sex Tape: added by drmonocle
+686  -  Human Highway: added by steeeps
+165  -  King Kong: added by steeeps
+418  -  Brawl in Cell Block 99: added by mitchum411
+320  -  Pink Floyd - The Wall: added by mitchum411
+796  -  Color Out of Space: added by mitchum411
+247  -  Desperado: added by steeeps
+526  -  Watchmen Directors Cut: added by steeeps
+754  -  Spy Kids 3D: added by drmonocle
+445  -  Red Planet: added by mitchum411
+135  -  Top Secret: added by steeeps
+394  -  Hell or High Water: added by mitchum411
+126  -  Cocktail: added by drmonocle
+719  -  Revenge of the Nerds: added by steeeps
+450  -  Ski School: added by drmonocle
+857  -  Contact: added by drmonocle
+633  -  Gran Torino: added by golden_god
+323  -  Blades of Glory\: added by golden_god
+134  -  The Matrix: added by golden_god
+599  -  Silent Hill: added by golden_god
+760  -  The Autopsy of Jane Doe: added by golden_god
+107  -  Tremors: added by steeeps
+478  -  Waiting for Godot: added by dingleberrytagnut
+764  -  The Day of the Jackal (1973): added by dingleberrytagnut

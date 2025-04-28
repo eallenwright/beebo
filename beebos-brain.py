@@ -29,9 +29,8 @@ async def my_command_function(ctx: SlashContext):
     await ctx.send_modal(modal=my_modal)
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
     movie_text = modal_ctx.responses["movie_text"]
-    await modal_ctx.send(f"Movie added by {modal_ctx.author.display_name}: {movie_text}", ephemeral=False, silent=True)
+    x = str(random.randint(100, 999))
     with open("movie-list5.txt", "r") as f1:
-        x = str(random.randint(100, 999))
         movie_list = f1.readlines()
         for i in movie_list:
             if x in i:
@@ -44,6 +43,7 @@ async def my_command_function(ctx: SlashContext):
             else:
                 with open("movie-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
+    await modal_ctx.send(f"Movie added by {modal_ctx.author.display_name}: {x}  -  {movie_text}", ephemeral=False, silent=True)
 
 @slash_command(name="add-christmas-movie", description="Add a Christmas movie to Beebo's brain matrix")
 async def my_command_function2(ctx: SlashContext):
@@ -60,9 +60,8 @@ async def my_command_function2(ctx: SlashContext):
     await ctx.send_modal(modal=my_modal)
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
     christmas_text = modal_ctx.responses["christmas_text"]
-    await modal_ctx.send(f"Christmas movie added by {modal_ctx.author.display_name}: {christmas_text}", ephemeral=False, silent=True)
+    x = str(random.randint(100, 999))
     with open("movie-list5.txt", "r") as f1:
-        x = str(random.randint(100, 999))
         christmas_list = f1.readlines()
         for i in christmas_list:
             if x in i:
@@ -75,6 +74,7 @@ async def my_command_function2(ctx: SlashContext):
             else:
                 with open("christmas-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
+    await modal_ctx.send(f"Christmas movie added by {modal_ctx.author.display_name}: {x}  - {christmas_text}", ephemeral=False, silent=True)
 
 @slash_command(name="list-movie", description="List all movies in Beebo's brain")
 async def movie_list(ctx: SlashContext):
@@ -103,7 +103,7 @@ async def movie_roll(ctx: SlashContext):
             if len(randomuserslist) >= 3:
                 randommovie = randomuserslist[random.randint(0, len(randomuserslist)-1)]
                 justthemovie = randommovie.split(':')[0]
-                await ctx.send(f"From deep within the folds of The Pit, a Selection by {randomuser} is born:\n {justthemovie}")
+                await ctx.send(f"From deep within the folds of Beebo's Brain, a Selection by {randomuser} is born:\n {justthemovie}")
             else:
                 await ctx.send(f"Beebo chose {randomuser}, but they haven't added enough movies (three) to be considered by His grace. Beebo will roll again")
                 x = True
@@ -122,7 +122,7 @@ async def movie_roll2(ctx: SlashContext):
                     randomuserslist.append(i)
             randommovie = randomuserslist[random.randint(0, len(randomuserslist)-1)]
             justthemovie = randommovie.split(':')[0]
-            await ctx.send(f"From deep within the folds of The Pit, a Christmas Miracle by {randomuser} is born:\n {justthemovie}")
+            await ctx.send(f"From deep within the folds of Beebo's Brain, a Christmas Miracle by {randomuser} is born:\n {justthemovie}")
 
 @slash_command(name="del-movie", description="Partially lobotomize Beebo")
 async def delete_movie(ctx: SlashContext):
@@ -208,9 +208,8 @@ async def my_command_function3(ctx: SlashContext):
     await ctx.send_modal(modal=my_modal)
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
     show_text = modal_ctx.responses["show_text"]
-    await modal_ctx.send(f"Show added by {modal_ctx.author.display_name}: {show_text}", ephemeral=False, silent=True)
+    x = str(random.randint(100, 999))
     with open("show-list.txt", "r") as f1:
-        x = str(random.randint(100, 999))
         show_list = f1.readlines()
         for i in show_list:
             if x in i:
@@ -223,6 +222,7 @@ async def my_command_function3(ctx: SlashContext):
             else:
                 with open("show-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
+    await modal_ctx.send(f"Show added by {modal_ctx.author.display_name}: {x}  -   {show_text}", ephemeral=False, silent=True)
 
 @slash_command(name="list-shows", description="List all shows in Beebo's brain")
 async def show_list(ctx: SlashContext):
@@ -284,9 +284,9 @@ async def show_roll(ctx: SlashContext):
             if len(randomuserslist) >= 2:
                 randomshow = randomuserslist[random.randint(0, len(randomuserslist)-1)]
                 justtheshow = randomshow.split(':')[0]
-                await ctx.send(f"From deep within the folds of The Pit, a Selection by {randomuser} is born:\n {justtheshow}")
+                await ctx.send(f"From deep within the folds of Beebo's Brain, a Selection by {randomuser} is born:\n {justtheshow}")
             else:
-                await ctx.send(f"Beebo chose {randomuser}, but they haven't added enough movies (three) to be considered by His grace. Beebo will roll again")
+                await ctx.send(f"Beebo chose {randomuser}, but they haven't added enough shows (three) to be considered by His grace. Beebo will roll again")
                 x = True
 
 ########## GAMES ##########
@@ -307,9 +307,8 @@ async def add_game(ctx: SlashContext):
     await ctx.send_modal(modal=my_modal)
     modal_ctx: ModalContext = await ctx.bot.wait_for_modal(my_modal)
     game_text = modal_ctx.responses["game_text"]
-    await modal_ctx.send(f"Game added by {modal_ctx.author.display_name}: {game_text}", ephemeral=False, silent=True)
+    x = str(random.randint(100, 999))
     with open("game-list.txt", "r") as f:
-        x = str(random.randint(100, 999))
         game_list = f.readlines()
         for i in game_list:
             if x in i:
@@ -322,6 +321,7 @@ async def add_game(ctx: SlashContext):
             else:
                 with open("game-users.txt", "a") as f3:
                     f3.write(f"{modal_ctx.author.username}\n")
+    await modal_ctx.send(f"Game added by {modal_ctx.author.display_name}: {x}  -  {game_text}", ephemeral=False, silent=True)
 
 @slash_command(name="list-game", description="List all games in Beebo's brain")
 async def game_list(ctx: SlashContext):
@@ -345,7 +345,7 @@ async def game_roll(ctx: SlashContext):
                 randomuserslist.append(i)
         randomgame = randomuserslist[random.randint(0, len(randomuserslist)-1)]
         justthegame = randomgame.split(':')[0]
-        await ctx.send(f"From deep within the folds of The Pit, a Selection by {randomuser} is born:\n {justthegame}") 
+        await ctx.send(f"From deep within the folds of Beebo's Brain, a Selection by {randomuser} is born:\n {justthegame}") 
 
 @slash_command(name="del-game", description="Partially lobotomize Beebo")
 async def delete_game(ctx: SlashContext):
