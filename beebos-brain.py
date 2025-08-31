@@ -547,13 +547,15 @@ async def victim_roll(ctx: SlashContext):
 
 @slash_command(name="burger", description="Tally burger")
 async def add_burger(ctx: SlashContext):
-    with open("burgers.txt", "r") as f:
-        if str(ctx.author.username) in f.read():
-                print("user already in list")
-        else:
-            with open("burgers.txt", "a") as f2:
-                    f2.write(f"{ctx.author.username}\n")
-        await ctx.send(f"Burger added by {ctx.author.display_name}", ephemeral=False, silent=True)
+    with open("burgers.txt", "a") as f:
+        f.write(f"{ctx.author.username}\n")
+        f.close
+        burgerNumber = 1
+        with open("burgers.txt", "r") as f1:
+            for i in f1.readlines():
+                if ctx.author.username in i:
+                    burgerNumber += 1
+            await ctx.send(f"Burger added by {ctx.author.display_name}: Burger Tally = {burgerNumber}", ephemeral=False, silent=True)
 
 ########## BOT START ##########
 
