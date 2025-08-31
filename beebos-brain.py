@@ -1,4 +1,4 @@
-from interactions import listen, slash_command, SlashContext, Button, ButtonStyle, Modal, ModalContext, ShortText, ActionRow
+from interactions import OptionType, Attachment, File, slash_option, listen, slash_command, SlashContext, Button, ButtonStyle, Modal, ModalContext, ShortText, ActionRow
 from interactions.api.events import Component, ModalCompletion
 from private.config import token
 import interactions
@@ -546,7 +546,13 @@ async def victim_roll(ctx: SlashContext):
         await ctx.send(f"Beebo chooses {randomuser}") 
 
 @slash_command(name="burger", description="Tally burger")
-async def add_burger(ctx: SlashContext):
+@slash_option(
+    name="attachment_option",
+    description="Attachment Option",
+    required=True,
+    opt_type=OptionType.ATTACHMENT
+)
+async def add_burger(ctx: SlashContext, attachment_option: Attachment):
     with open("burgers.txt", "a") as f:
         f.write(f"{ctx.author.username}\n")
         f.close
@@ -555,7 +561,7 @@ async def add_burger(ctx: SlashContext):
             for i in f1.readlines():
                 if ctx.author.username in i:
                     burgerNumber += 1
-            await ctx.send(f"Burger added by {ctx.author.display_name}: Burger Tally = {burgerNumber}", ephemeral=False, silent=True)
+            await ctx.send(f"Burger added by {ctx.author.display_name}: Burger Tally = {burgerNumber} {attachment_option.url}", ephemeral=False, silent=True)
 
 ########## BOT START ##########
 
