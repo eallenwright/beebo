@@ -545,6 +545,16 @@ async def victim_roll(ctx: SlashContext):
         randomuser = random.choice(user_list)
         await ctx.send(f"Beebo chooses {randomuser}") 
 
+@slash_command(name="burger", description="Tally burger")
+async def add_burger(ctx: SlashContext):
+    with open("burgers.txt", "r") as f:
+        if str(ctx.author.username) in f.read():
+                print("user already in list")
+        else:
+            with open("burgers.txt", "a") as f2:
+                    f2.write(f"{ctx.author.username}\n")
+        await ctx.send(f"Burger added by {ctx.author.display_name}", ephemeral=False, silent=True)
+
 ########## BOT START ##########
 
 print('starting bot...')

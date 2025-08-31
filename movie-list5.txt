@@ -2,13 +2,9 @@
 349  -  Krull: added by steeeps
 667  -  children of men: added by ziggsmanofmayo
 825  -  Ants: added by steeeps
-743  -  Demolition Man: added by dingleberrytagnut
 814  -  Cliffhanger: added by dingleberrytagnut
 431  -  Face Off: added by dingleberrytagnut
-889  -  Wishmaster 2: added by steeeps
-695  -  The Mummy: added by mitchum411
 228  -  Toy Soldiers: added by steeeps
-169  -  Resevoir Dogs: added by .tellurium
 868  -  Ex Machina: added by gbaden11
 770  -  Conan the Barbarian: added by drmonocle
 160  -  Total Recall: added by drmonocle
@@ -16,15 +12,11 @@
 312  -  Harry Potter & the G of F: added by drmonocle
 855  -  Underworld: added by steeeps
 139  -  Coherence: added by steeeps
-626  -  Kangaroo Jack: added by drmonocle'
 717  -  BASEketball: added by drmonocle
 659  -  Goon: added by golden_god
 446  -  Stargate: added by steeeps
-337  -  Twister: added by drmonocle  
 548  -  Braveheart: added by dingleberrytagnut
-810  -  Captain Ron: added by drmonocle
 670  -  A Knight's Tale: added by drmonocle
-872  -  Drive: added by drmonocle
 455  -  Willow: added by steeeps
 371  -  Delgo: added by drmonocle
 436  -  The Truman Show: added by mitchum411 
@@ -36,7 +28,6 @@
 593  -  Cherry 2000: added by drmonocle
 703  -  Troll 2: added by .tellurium
 702  -  Speed 2: Cruise Control: added by drmonocle
-388  -  Venture Bros Movie: added by drmonocle
 205  -  The Founder: added by .tellurium
 496  -  Breath Hill 60: added by .tellurium
 146  -  Aces High: added by drmonocle
@@ -46,10 +37,8 @@
 788  -  The Lighthouse: added by mitchum411
 314  -  Grizzly Man: added by .tellurium
 438  -  The Fire Within: added by .tellurium
-904  -  Super Mario Bros: added by gbaden11
 625  -  Master and Commander: added by .tellurium
 666  -  Quest for Fire: added by .tellurium
-357  -  Airplane!: added by drmonocle
 671  -  The Big Lebowski: added by mitchum411
 259  -  Point Break: added by drmonocle
 757  -  The Asian Connection: added by .tellurium
@@ -64,7 +53,6 @@
 482  -  The Last King of Scotland: added by .tellurium
 402  -  Love Liza: added by .tellurium
 950  -  Leaving Las Vegas: added by .tellurium
-244  -  Lady Bird: added by .tellurium
 784  -  The Fighter: added by .tellurium
 390  -  Judas and the Black Messiah: added by .tellurium
 831  -  Top Gun: Maverick: added by .tellurium
@@ -110,7 +98,6 @@
 998  -  Jumanji (1995): added by dingleberrytagnut
 333  -  The Batman: added by steeeps
 936  -  Observe and Report: added by drmonocle
-492  -  the great escape: added by drmonocle
 351  -  Kill Bill Vol 1 & 2: added by drmonocle
 114  -  Anchorman: The Legend of Ron Burgundy: added by drmonocle
 508  -  Team America: World Police: added by mitchum411
@@ -119,27 +106,22 @@
 358  -  Unfrosted: added by drmonocle
 740  -  Beverly Hills Cop: Axel F: added by drmonocle
 542  -  ed edd and eddy: added by gbaden11
-820  -  Whiplash: added by mitchum411
 162  -  1917: added by mitchum411
 540  -  Unthinkable: added by mitchum411
 567  -  Willy's Wonderland: added by mitchum411
 131  -  the pursuit of hapiness: added by ziggsmanofmayo
 969  -  Stepford Wives: added by steeeps
-655  -  Hook: added by drmonocle
 141  -  Heat: added by dingleberrytagnut
 456  -  Jason and the Argonauts: added by steeeps
 661  -  Moonfall: added by dingleberrytagnut
-749  -  The Book of Eli: added by dingleberrytagnut
 546  -  The Beast (1988): added by mitchum411
 235  -  Mad Max Furry Road : added by steeeps
 265  -  The Hobbit – The Cardinal Cut: added by drmonocle
-802  -  the thing: added by chlor8
 903  -  Seven: added by mitchum411
 110  -  The Crow (1994): added by drmonocle
 493  -  Scanners: added by mitchum411
 782  -  Teeth: added by steeeps
 779  -  Django Unchained: added by mitchum411
-624  -  Toy Story: added by drmonocle
 885  -  The Bikeriders: added by mitchum411
 527  -  Dredd: added by mitchum411
 706  -  Troy: added by steeeps
@@ -149,18 +131,11 @@
 705  -  The Public Enemy: added by drmonocle
 368  -  Death Bed: The Bed that Eats People: added by steeeps
 771  -  Flight: added by drmonocle
-896  -  Blazing Saddles: added by steeeps
 429  -  The Informant: added by steeeps
-257  -  Iron eagle: added by drmonocle
 557  -  National Treasure 2: added by drmonocle
 647  -  National Treasure: added by drmonocle
-686  -  See No Evil, Hear No Evil: added by mitchum411
-656  -  The Equalizer 3: added by steeeps
-699  -  The Equalizer 3: added by drmonocle
-324  -  Batman & Robin: added by gbaden11
 120  -  The Men that stare at goats: added by drmonocle
 755  -  Sandlot: added by gbaden11
-946  -  Twister: added by drmonocle
 644  -  No Country For Old Men: added by drmonocle
 979  -  The Hateful Eight: added by mitchum411
 688  -  The Hateful Eight (the episode version): added by drmonocle
@@ -217,7 +192,6 @@
 495  -  The Road: added by .tellurium
 912  -  Last Action Hero: added by steeeps
 503  -  angels in the outfield: added by gbaden11
-336  -  To Live and Die in L.A.: added by mitchum411
 818  -  The Northman: added by mitchum411
 210  -  John Dies in the End: added by gbaden11
 852  -  There Will Be Blood: added by mitchum411
@@ -228,13 +202,11 @@
 300  -  Princess Mononoke: added by gbaden11
 267  -  Prey: added by .tellurium
 612  -  XMAS MOVIE -  Kim Kardashian Sex Tape: added by drmonocle
-686  -  Human Highway: added by steeeps
 165  -  King Kong: added by steeeps
 418  -  Brawl in Cell Block 99: added by mitchum411
 320  -  Pink Floyd - The Wall: added by mitchum411
 796  -  Color Out of Space: added by mitchum411
 247  -  Desperado: added by steeeps
-526  -  Watchmen Directors Cut: added by steeeps
 754  -  Spy Kids 3D: added by drmonocle
 445  -  Red Planet: added by mitchum411
 135  -  Top Secret: added by steeeps
@@ -244,10 +216,55 @@
 450  -  Ski School: added by drmonocle
 857  -  Contact: added by drmonocle
 633  -  Gran Torino: added by golden_god
-323  -  Blades of Glory\: added by golden_god
 134  -  The Matrix: added by golden_god
 599  -  Silent Hill: added by golden_god
 760  -  The Autopsy of Jane Doe: added by golden_god
 107  -  Tremors: added by steeeps
 478  -  Waiting for Godot: added by dingleberrytagnut
 764  -  The Day of the Jackal (1973): added by dingleberrytagnut
+704  -  The Town: added by mitchum411
+991  -  Fast Times at Ridgemont High: added by steeeps
+118  -  Napoleon Dynamite: added by golden_god
+436  -  Human Highway: added by steeeps
+822  -  Titanic: added by golden_god
+806  -  The Untouchables: added by mitchum411
+682  -  An Officer and a Gentleman: added by steeeps
+821  -  Speed Racer: added by steeeps
+535  -  Iron Eagle II: added by drmonocle
+140  -  Eastern Promises: added by mitchum411
+977  -  Dumb and Dumber: added by steeeps
+830  -  Casino (1995): added by mitchum411
+889  -  Wishmaster 2: added by steeeps
+492  -  the great escape: added by drmonocle
+655  -  Hook: added by drmonocle
+896  -  Blazing Saddles: added by steeeps
+
+156  -  Old Henry: added by mitchum411
+147  -  The Gorge: added by mitchum411
+400  -  The French Connection: added by mitchum411
+892  -  Boogie Nights: added by chlor8
+390  -  Tenacious D and the Pick of Destiny: added by .tellurium
+674  -  Guns Akimbo: added by mitchum411
+588  -  Blade Runner (1982): added by mitchum411
+753  -  Blade Runner 2049: added by mitchum411
+464  -  The Holy Mountain (1973): added by mitchum411
+867  -  Sisu: added by mitchum411
+716  -  Bill and Ted's Excellent Adventure: added by .tellurium
+200  -  The Conversation (1974): added by dingleberrytagnut
+616  -  The Deer Hunter (1978): added by dingleberrytagnut
+223  -  Trainspotting: added by steeeps
+741  -  War of the Worlds (2025): added by dingleberrytagnut
+823  -  Caravan of Courage: An Ewok Adventure: added by steeeps
+425  -  21 Jump Street: added by golden_god
+715  -  22 Jump Street: added by golden_god
+481  -  Don't worry darling: added by blcklambda
+221  -  Bullet train: added by blcklambda
+828  -  Deep blue sea: added by blcklambda
+916  -  The Autopsy of Jane Doe: added by golden_god
+888  -  Office Space: added by mitchum411
+237  -  Monster (2003): added by mitchum411
+386  -  Wanted (2008): added by .tellurium
+866  -  Smokin' Aces (2006): added by .tellurium
+824  -  Kill Bill: Vol. 1 (2003): added by .tellurium
+961  -  Kill Bill: Vol. 2 (2004): added by .tellurium
+623  -  Batman Forever: added by steeeps
